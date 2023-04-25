@@ -23,12 +23,12 @@ with open("integers.txt", "r") as file_integers, open("double.txt", "w") as even
         # determine the even numbers and square it
         if num % 2 == 0:
             sq_even = (num)**2
-            even_square.write(f"square of {num}: " + str(sq_even) + "\n")
+            even_square.write(f"Square of {num} = " + str(sq_even) + "\n")
         
         # determine the odd numbers and cube it
         elif num % 2 == 1:
             cube = (num)**3
-            cube_odd.write(str(cube) + "\n")
+            cube_odd.write(f"Cube of {num} = "+ str(cube) + "\n")
 
 regards = pyfiglet.figlet_format("Kudos!", font = "speed")
 console_cube_sq.print(regards, style = "reg")

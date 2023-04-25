@@ -1,10 +1,10 @@
-square of 2: 4
-square of 4: 16
-square of 6: 36
-square of 8: 64
-square of 10: 100
-square of 12: 144
-square of 14: 196
-square of 16: 256
-square of 18: 324
-square of 20: 400
+Square of 2 = 4
+Square of 4 = 16
+Square of 6 = 36
+Square of 8 = 64
+Square of 10 = 100
+Square of 12 = 144
+Square of 14 = 196
+Square of 16 = 256
+Square of 18 = 324
+Square of 20 = 400
