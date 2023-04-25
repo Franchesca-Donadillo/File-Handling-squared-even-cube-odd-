@@ -1,10 +1,10 @@
-4
-16
-36
-64
-100
-144
-196
-256
-324
-400
+square of 2: 4
+square of 4: 16
+square of 6: 36
+square of 8: 64
+square of 10: 100
+square of 12: 144
+square of 14: 196
+square of 16: 256
+square of 18: 324
+square of 20: 400

@@ -9,7 +9,7 @@ import pyfiglet
 from rich.theme import Theme
 from rich.console import Console
 
-theme_cube_sq = Theme({"reg" : "green"})
+theme_cube_sq = Theme({"reg" : "green", "success" : "bold cyan"})
 console_cube_sq = Console(theme = theme_cube_sq)
 
 # read source text file integers.txt
@@ -23,7 +23,7 @@ with open("integers.txt", "r") as file_integers, open("double.txt", "w") as even
         # determine the even numbers and square it
         if num % 2 == 0:
             sq_even = (num)**2
-            even_square.write(str(sq_even) + "\n")
+            even_square.write(f"square of {num}: " + str(sq_even) + "\n")
         
         # determine the odd numbers and cube it
         elif num % 2 == 1:
@@ -33,4 +33,4 @@ with open("integers.txt", "r") as file_integers, open("double.txt", "w") as even
 regards = pyfiglet.figlet_format("Kudos!", font = "speed")
 console_cube_sq.print(regards, style = "reg")
 
-print("You have successfully cubed the odd numbers and squared the even numbers. Go check it!\n")
+console_cube_sq.print("✅ You have successfully saved and cubed the odd numbers and squared the even numbers in their text files. Go check it!\n", style = "success")
