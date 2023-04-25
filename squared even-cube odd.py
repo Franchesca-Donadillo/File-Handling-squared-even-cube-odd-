@@ -5,6 +5,13 @@
 # import pyfiglet
 import pyfiglet
 
+# import rich for additional designs
+from rich.theme import Theme
+from rich.console import Console
+
+theme_cube_sq = Theme({"reg" : "green"})
+console_cube_sq = Console(theme = theme_cube_sq)
+
 # read source text file integers.txt
 # create file named double.txt
 # create file triple.txt
@@ -24,4 +31,6 @@ with open("integers.txt", "r") as file_integers, open("double.txt", "w") as even
             cube_odd.write(str(cube) + "\n")
 
 regards = pyfiglet.figlet_format("Kudos!", font = "speed")
-print(regards)
+console_cube_sq.print(regards, style = "reg")
+
+print("You have successfully cubed the odd numbers and squared the even numbers. Go check it!\n")
